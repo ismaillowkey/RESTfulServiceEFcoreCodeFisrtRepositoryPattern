@@ -86,7 +86,7 @@ namespace RESTfulServiceEFcoreCodeFisrtRepositoryPattern
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
-                c.RoutePrefix = string.Empty; // move /swagger to /
+                c.RoutePrefix = string.Empty; // move IP:port/swagger to IP:port/
             });
 
             app.UseEndpoints(endpoints =>
